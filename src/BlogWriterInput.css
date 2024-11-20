@@ -1,0 +1,102 @@
+/* BlogWriterInput.css */
+
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .blog-writer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styling */
+  .blog-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #aaa;
+  }
+  
+  /* File Input */
+  input[type="file"] {
+    padding: 5px;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .blog-writer {
+      padding: 15px;
+    }
+  
+    .form-group label {
+      font-size: 14px;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      font-size: 14px;
+    }
+  
+    .submit-button {
+      font-size: 14px;
+    }
+  }
+  
