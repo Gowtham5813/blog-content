@@ -124,14 +124,14 @@ const BlogHome = ({ blogs }) => {
                     <span className="places-count">{blog.places} places</span>
                     {/* Like Button */}
                     <button
-  className="like-button"
-  onClick={(e) => {
-    e.preventDefault(); // Prevent Link from triggering on click
-    handleLikeClick(blog.id);
-  }}
->
-  {likedBlogs[blog.id] ? "❤️" : "🤍"}
-</button>
+                        className="like-button"
+                        onClick={(e) => {
+                          e.preventDefault(); // Prevent Link from triggering on click
+                          handleLikeClick(blog.id);
+                        }}
+                      >
+                        {likedBlogs[blog.id] ? "❤️" : "🤍"}
+                    </button>
                   </div>
                 </div>
                 <div className="blog-details">
